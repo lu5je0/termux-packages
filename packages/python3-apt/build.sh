@@ -24,10 +24,10 @@ termux_step_make() {
 termux_step_make_install() {
 	# export LD_LIBRARY_PATH="${TERMUX_PREFIX}/include/python3.8"
 	# export PYTHONPATH=$TERMUX_PREFIX/lib/python3.8/site-packages/:$LD_LIBRARY_PATH
-  # env
-  # python3.8 setup.py config -I "/include/python3.8" -L "/include/python3.8"
-  # export PYTHON_INCLUDE_PATH="${TERMUX_PREFIX}"
-  # export PYTHON_INCLUDE_DIR=$TERMUX_PREFIX/include/python3.8
+	# env
+	# python3.8 setup.py config -I "/include/python3.8" -L "/include/python3.8"
+	# export PYTHON_INCLUDE_PATH="${TERMUX_PREFIX}"
+	# export PYTHON_INCLUDE_DIR=$TERMUX_PREFIX/include/python3.8
 	# export PYTHONHOME="${TERMUX_PREFIX}/include/python3.8"
 	export PYTHONPATH="${TERMUX_PREFIX}/lib/python3.8/site-packages/"
 	env | sort
