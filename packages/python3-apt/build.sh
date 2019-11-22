@@ -19,7 +19,6 @@ termux_step_make() {
 termux_step_make_install() {
 	export PYTHONPATH="${TERMUX_PREFIX}/lib/python3.8/site-packages/"
 	sed -ri "s|(extra_compile_args=\[)|include_dirs=\['${TERMUX_PREFIX}/include', '${TERMUX_PREFIX}/include/python3.8'\], \1|" setup.py
-  python 3.8 setup.py compile
 	python3.8 setup.py install --prefix="$TERMUX_PREFIX" --force
 }
 
